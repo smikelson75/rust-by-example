@@ -1,4 +1,4 @@
-!#[allow(unused_variables)]
+#![allow(unused_variables)]
 
 fn main() {
     // Modulus operator
@@ -38,7 +38,7 @@ fn main() {
     let is_false = !is_true;
 
     // output: is_true = true; is_false = false
-    println("is_true = {}; is_false = {}", is_true, is_false);
+    println!("is_true = {}; is_false = {}", is_true, is_false);
 
     // Logical And (&&)
     // value: true

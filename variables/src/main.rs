@@ -44,6 +44,9 @@ fn main() {
 
     // variables can be shadowed even in the same scope and the shadowed variable 
     // is not restricted on the type.
-    let scope_test: i32 = 0
+    let scope_test: i32 = 0;
     println!("{}", scope_test);
+
+    // constant, cannot be shadowed at all.
+    const SCOPE_TEST: i32 = 0;
 }
