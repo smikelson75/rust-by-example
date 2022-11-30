@@ -45,6 +45,7 @@ fn main() {
         }
     }
 
+    // Propagation of error from the function.
     let file_data  = read_file(filename);
 
     match file_data {
@@ -54,6 +55,17 @@ fn main() {
         Err(_) => {}
     }
 
+    // Another way of capturing an error, use .unwrap()
+    // If Result.OK is return, the value is stored (or process continues)
+    // IF Result.Err is return, a panic is generated.
+    let file_data  = read_file(filename).unwrap();
+    println!("{}", file_data);
+
+    // Another way of capturing an error, use .expect()
+    // If Result.OK is return, the value is stored (or process continues)
+    // IF Result.Err is return, a panic is generated with the provided message.
+    let file_data  = read_file(filename).expect("An issue occured trying to read file.");
+    println!("{}", file_data);
 }
 
 // Function allows for the Error to be passed back up the stack

@@ -25,6 +25,10 @@ fn main() {
 
     // mutable variable
     let mut changeable_variable = 500;
+    println!("{}", changeable_variable);
+
+    changeable_variable = 150;
+    println!("{}", changeable_variable);
 
     // primary scope. output: outer_scope
     let scope_test = "outer_scope";
@@ -49,4 +53,5 @@ fn main() {
 
     // constant, cannot be shadowed at all.
     const SCOPE_TEST: i32 = 0;
+    println!("{}", SCOPE_TEST);
 }

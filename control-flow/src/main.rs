@@ -10,9 +10,9 @@ fn main() {
 
     // If let
     // https://doc.rust-lang.org/reference/statements.html#let-statements
-    if let word = "Duck" {
-        println!("Quack");
-    }
+    // if let word = "Duck" {
+    //     println!("Quack");
+    // }
 
     // If then ... else
     if word == "Duck" {
@@ -55,6 +55,10 @@ fn main() {
         VOR = 3,    // 3
         VORDME      // 4
     }
+
+    println!("NDB:\t{}", NaviagationAidsSetVOR::NDB as u8);
+    println!("VOR:\t{}", NaviagationAidsSetVOR::VOR as u8);
+    println!("VORDME:\t{}", NaviagationAidsSetVOR::VORDME as u8);
 
     // Rust does allow you to set values explicitly
     // If VORDME is left with no value, the code will NOT compile
