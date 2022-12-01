@@ -1,0 +1,16 @@
+# Tom's Obvious Minimal Language (https://toml.io)
+# Cargo Command Line Package Manager (https://docs.rust-lang.org/cargo/commands/index.html)
+
+[package]
+name = "modules"
+version = "0.1.0"
+edition = "2021"
+description = "Pluralsight demo publishing project"
+license = "Apache-2.0"
+
+# License requires the appropriate SPX Identifier, found at https://spdx.github.io/license-list-data
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# Rust Repository: Crates (https://crates.io)
+
+[dependencies]
+rand = "0.8.5"
