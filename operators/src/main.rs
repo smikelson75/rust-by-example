@@ -1,6 +1,7 @@
 #![allow(unused_variables)]
 
 fn main() {
+    // Literals and Operators (https://doc.rust-lang.org/rust-by-example/primitives/literals.html)
     // Modulus operator
     // output: 4
     let modulus = 18 % 7;

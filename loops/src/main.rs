@@ -1,6 +1,11 @@
 fn main() {
+    // Loop (https://doc.rust-lang.org/rust-by-example/flow_control/loop.html)
     runloop();
+
+    // While (https://doc.rust-lang.org/rust-by-example/flow_control/while.html)
     whileloop();
+
+    // For (https://doc.rust-lang.org/rust-by-example/flow_control/for.html)
     forloop();
     forlooparray();
 }

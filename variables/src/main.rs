@@ -1,6 +1,7 @@
 #![allow(unused_variables)]
 
 fn main() {
+    // Mutability (https://doc.rust-lang.org/rust-by-example/variable_bindings/mut.html)
     // immutable variable (default)
     let defined_variable: i32 = 0;
 
@@ -9,6 +10,13 @@ fn main() {
 
     // inferred variable, f64 default
     let inferred_variable_float = 1.0;
+
+    // mutable variable
+    let mut changeable_variable = 500;
+    println!("{}", changeable_variable);
+
+    changeable_variable = 150;
+    println!("{}", changeable_variable);
 
     // Compiler complains about unused variable, use underscore 
     // when you know it will be unused.
@@ -19,17 +27,10 @@ fn main() {
 
     // Rust doesn't allow for implicit casting. 
     // All casting must be done explicitly
-    let cast_unsigned_eight = unsigned_eight as f32;
+    // (https://doc.rust-lang.org/rust-by-example/types/cast.html)
+    let result = float_thirty_two / unsigned_eight as f32;
 
-    let result = float_thirty_two / cast_unsigned_eight;
-
-    // mutable variable
-    let mut changeable_variable = 500;
-    println!("{}", changeable_variable);
-
-    changeable_variable = 150;
-    println!("{}", changeable_variable);
-
+    // Scope and Shadowing (https://doc.rust-lang.org/rust-by-example/variable_bindings/scope.html)
     // primary scope. output: outer_scope
     let scope_test = "outer_scope";
     println!("{}", scope_test);

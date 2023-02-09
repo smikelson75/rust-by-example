@@ -11,7 +11,7 @@ struct Airbus {
 }
 
 // Trait provides a function signature to be implemented by
-// impl for structs
+// impl for structs, similar to an interface in other languages.
 trait Flight {
     fn is_legal(&self, available_crew: u8, distance: u16) -> bool;
 }

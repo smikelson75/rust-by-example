@@ -46,7 +46,7 @@ fn main() {
     // the value now referenced by both next AND original is "new value"
     println!("{}", original);
 
-    // Lifetimes
+    // Lifetimes (https://doc.rust-lang.org/rust-by-example/scope/lifetime.html)
     // Dangling reference - inner_scope is deallocated leaving outer_scope
     // pointing to a memory address that doesn't have anything
     //let outer_scope;
@@ -65,6 +65,7 @@ fn main() {
     let value_one = 24;
     let value_two = 67;
 
+    // Explicit Lifetime (https://doc.rust-lang.org/rust-by-example/scope/lifetime/explicit.html)
     let value = explict_lifetime(&value_one, &value_two);
 
     // output: 67

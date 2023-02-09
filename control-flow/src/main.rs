@@ -1,6 +1,7 @@
 #![allow(unused_variables)]
 
 fn main() {
+    // If/Else (https://doc.rust-lang.org/rust-by-example/flow_control/if_else.html)
     let word = "Duck";
 
     // If then
@@ -8,10 +9,9 @@ fn main() {
         println!("Quack");
     }
 
-    // If let
-    // https://doc.rust-lang.org/reference/statements.html#let-statements
-    // if let word = "Duck" {
-    //     println!("Quack");
+    // If let (https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html)
+    // if let word = "Cat" {
+    //     println!("Meow");
     // }
 
     // If then ... else
@@ -35,7 +35,7 @@ fn main() {
             print!("Okay");
     }
 
-    // Enumeration
+    // Enumeration (https://doc.rust-lang.org/rust-by-example/custom_types/structs.html)
     enum NaviagationAidsBasic {
         NDB,
         VOR,
@@ -89,7 +89,8 @@ fn main() {
 
     println!("{}", value);
 
-    // Match statement (similar to switch statement)
+    // Match statement (https://doc.rust-lang.org/rust-by-example/flow_control/match.html)
+    // similar to switch statement
     let animal = "Duck";
     match animal {
         // animal contains duck, print "Quack"

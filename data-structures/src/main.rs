@@ -1,5 +1,6 @@
 #![allow(unused)]
 
+// Structures (https://doc.rust-lang.org/rust-by-example/custom_types/structs.html)
 // Normal structures implemented in C, C++, C# etc.
 struct WayPoint {
     name: String,
